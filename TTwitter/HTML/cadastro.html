@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TTwitter - página de cadastro">
+    <meta name="keywords" content="TTwitter, cadastro, rede social, clone, protótipo">
+    <meta name="author" content="Alex Aguiar Lana">
+    <link rel="stylesheet" href="../CSS/reset.css">
+    <link rel="stylesheet" href="../CSS/cadastro.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="box">        
+        <div class="form-box">
+        <!---------- Início do Formulário ---------->
+            <h2>Cadastro</h2>
+            <form action="#">
+                <div class="input-group">
+                    <label for="name">Nome</label>
+                    <input type="text" id="nome" placeholder="nome de usuário" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="exemplo@email.com" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="date">Data de nascimento</label>
+                    <input type="date" id="date" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="senha">Senha</label>
+                    <div class="password-wrapper">
+                        <input type="password" id="password" placeholder="********" required>
+                        <span id="togglePassword" class="eye-icon"></span>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="senha">Confirmar senha</label>
+                    <div class="password-wrapper">
+                        <input type="password" id="password_confirmation" placeholder="********" required>
+                        <span id="togglePasswordConfirmation" class="eye-icon"></span>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="feed.html"><input id="cadastrar" type="button" value="Cadastrar"></a>
+                </div>
+
+                <div>
+                    <a href="login.html"><input id="login" type="button" value="Fazer login"></a>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="termos" value="Li e concordo com os Termos e Condições de uso.">
+                    <label for="termos">Li e concordo com os Termos e Condições de uso.</label>
+                </div>
+
+            </form>
+        </div>
+        <!---------- Fim do formulário ---------->
+        <!---------- Logo Ttwitter ---------->
+        <div class="img-box">
+            <img src="../img/Logo TT.png" alt="Logo TTwitter">
+        </div>
+    </div>
+
+    <script src="../JavaScript/cadastro.js"></script>
+</body>
+</html>

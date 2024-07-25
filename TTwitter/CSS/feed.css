@@ -1,0 +1,352 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+body {
+    --TTwitter-background: #181B24;
+    background-color: #181B24;
+}
+
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    background: #14161D;
+    padding: 6px 6%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.126);
+}
+
+.logo img{
+    width: 60px;
+    height: 62.35px;
+    margin-left: 15px;
+}
+
+.nav-search{
+    width: 250px;
+    border-radius: 20px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    padding: 0 15px;
+    position: relative;
+    right: 12px;
+}
+
+.nav-search img{
+    width: 24px;
+    margin-right: 400px;
+    right: 40px;
+    position: relative;
+}
+
+.nav-search input{
+    width: 670px;
+    height: 35px;
+    left: 11px;
+    padding: 8px;
+    border-radius: 25px;
+    opacity: 0.2px;
+    outline: none;
+    border: 0;
+    background-color: #484848;
+}
+
+.nav-search input::placeholder{
+    color: #999;
+}
+/* -------- fim da barra de navegação -------- */
+
+.container{
+    padding: 20px 6%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* -------- barra lateral esquerda -------- */
+.left-sidebar{
+    flex-basis: 10%;
+    align-self: flex-start;
+}
+
+.sidebar-feed-container {
+    display: flex;
+    flex: 1;
+}
+
+.sidebar {
+    border-right: 1px solid var(--TTwitter-background);
+    flex: 0.2;
+    margin-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.sidebarOption, .material-icons {
+    padding: 5px;
+}
+
+.sidebarOption:hover {
+    background-color: rgba(255, 255, 255, 0.322);
+    border-radius: 20px;
+    transition: color 100ms ease-out;
+}
+
+.material-icons{
+    font-size: 40px !important;
+    display: inline-block;
+}
+
+/* -------- CONTEÚDO PRINCIPAL -------- */
+
+.main-content{
+    flex-basis: 47%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.new-post{
+    width: 670px;
+    height: 14;
+    background: (--TTwitter-background);
+    border: 1.5px solid #484848;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.new-post-input{
+    padding: 20px 25px 10px;
+    width: 670px;
+    height: 142px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.feed-post{
+    width: 670px;
+    height: 709px;
+    top: 304px;
+    left: 195px;
+    border-color: beige;
+}
+
+.feed-post img{
+    width: 400px;
+    height: 400px;
+    top: 47px;
+    left: 97px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.new-post-input textarea{
+    width: 100%;
+    border: 0;
+    outline: 0;
+    resize: none;
+    background: transparent;
+    margin-top: 8px;
+    font-size: 14.5px;
+}
+
+::placeholder{
+    font-weight: 500;
+}
+
+.new-post-links{
+    display: flex;
+    align-items: flex-start;
+}
+
+.new-post-links li{
+    list-style: none;
+    border-top: 1px solid (--TTwitter-background);
+    border-radius: 1px solid (--TTwitter-background);
+    flex-basis: 5%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    cursor: pointer;
+    padding-left: 20px;
+}
+
+.post-button {
+    background-color: #22A2F2;
+    color: #000000;
+    border: none;
+    font-weight: 600;
+    border-radius: 10px;
+    width: 98px;
+    height: 40px;
+    margin-bottom: 15px;
+    margin-left: 400px;
+    cursor: pointer;
+    align-items: right;
+}
+
+.post-button:hover{
+    background-color: #0e77b9;
+    color: #000000;
+}
+
+.post{
+    width: 670px;
+    height: 709px;
+    border-radius: 15px;
+    border: 1.5px solid #484848;
+    padding: 50px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.post-photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.post-photo img{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+.post-author{
+    width: 500px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.post-author img{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: block;
+    margin: 10px;
+}
+
+.post-author span{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    flex-grow: 1;
+}
+
+.post-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.post-actions img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.post-text{
+    width: 500px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+#bill-post{
+    justify-content: left;
+}
+
+/* -------- BARRA LATERAL DIREITA -------- */
+.right-sidebar{
+    flex-basis: 35%;
+    align-self: flex-start;
+    align-items: center;
+}
+
+.sidebar-people-you-may-know h1{
+    width: 70%;
+    height: 60%;
+    padding: 15px;
+    margin: 1px 0 30px;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 29.05px;
+    text-align: left;
+}
+
+.people-profile {
+    text-align: center;
+}
+
+.profile-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 61%;
+}
+
+.profile-item span{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    flex-grow: 0;
+}
+
+.profile-item button {
+    background-color: #222222; 
+    color: #007bff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: auto;
+}
+
+.profile-item button:hover {
+    background-color: #cce1f7;
+    color: #222222; 
+    font-weight: 400;
+}
+
+.profile-item button.following {
+    background-color: #007bff;
+    color: white;
+}
+
+.people-profile img{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: block;
+    margin: 10px;
+}

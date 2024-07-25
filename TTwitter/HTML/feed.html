@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TTwitter - clone do twitter desenvolvido fins educativos">
+    <meta name="keywords" content="TTwitter, twitter, rede social, clone, protótipo">
+    <meta name="author" content="Alex Aguiar Lana">
+    <link rel="stylesheet" href="../CSS/reset.css">
+    <link rel="stylesheet" href="../CSS/feed.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <title>TTwitter feed</title>
+</head>
+<body>
+    <header>
+        <!-- -------- inicio da barra de navegação -------- -->
+        <nav class="nav-bar">
+            <div class="nav-logo">
+                <a href="index.html" class="logo"><img src="../img/Logo TT.png" alt="TTwitter Logo"></a>
+            </div>
+            <div class="nav-search">
+                <input class="search-bar" type="text" placeholder="Buscar">
+                <img src="../img/search.svg" alt="Buscar">
+            </div>
+        </nav>
+        <!-- -------- fim da barra de navegação -------- -->
+    </header>
+    
+    <main class="container">
+        <!-- -------- inicio da barra lateral esquerda -------- -->
+        <aside class="left-sidebar">
+            <section class="side-bar">
+                <div class="sidebar">
+                    <div class="sidebarOption" aria-label="Página Inicial" title="Página Inicial">
+                        <span class="material-icons">home</span>
+                    </div>
+                    <div class="sidebarOption" aria-label="Notificações" title="Notificações">
+                        <span class="material-icons">notifications_none</span>
+                    </div>
+                    <div class="sidebarOption" aria-label="Mensagens" title="Mensagens">
+                        <span class="material-icons">mail_outline</span>
+                    </div>
+                    <div class="sidebarOption" aria-label="Configurações" title="Configurações">
+                        <span class="material-icons">settings</span>
+                    </div>
+                </div>
+            </section>
+        </aside>
+        <!-- -------- fim da barra lateral esquerda -------- -->
+
+        <!-- -------- inicio do conteúdo principal -------- -->
+        <div class="main-content">
+            <div class="new-post">
+                <div class="new-post-input">
+                    <textarea rows="2" placeholder="No que está pensando...?" alt="No que está pensando?"></textarea>
+                </div>
+                <form>
+                    <div class="new-post-links">
+                        <li><img src="../img/image.svg" alt="Imagem"></li>
+                        <li><img src="../img/smile.svg" alt="Emoji"></li>
+                        <li><img src="../img/link.svg" alt="Link"></li>
+                        <button type="submit" class="post-button" alt="Postar">Postar</button>
+                    </div>
+                </form>
+            </div>
+            <article class="post">
+                <div class="post-photo">
+                    <img src="../img/post-feed.svg" alt="Foto da alegria com amigos">
+                </div>
+                <div class="post-author">
+                    <img src="../img/joy.jpeg" alt="Foto de perfil da alegria">
+                    <span>alegriaaaa</span>
+                    <div class="post-actions">
+                        <img src="../img/comments.svg" alt="Comentários">
+                        <img class="like-icon" src="../img/like-white.svg" alt="Curtir">
+                        <img class="favorite-icon" src="../img/favorite-white.svg" alt="Favoritar">
+                    </div>
+                </div>
+                <div class="post-text">
+                    <p>Você não pode olhar só o que vai mal. Sempre tem como dar um jeito. É só fazer uma força...</p>
+                </div>
+            </article>
+            <article class="post">
+                <div class="post-photo">
+                    <img src="../img/family.svg" alt="Foto de bill com a família">
+                </div>
+                <div class="post-author">
+                    <img src="../img/bill.svg" alt="Foto de perfil de bill">
+                    <span>bill_andersen</span>
+                    <div class="post-actions">
+                        <img src="../img/comments.svg" alt="Comentários">
+                        <img class="like-icon" src="../img/like-white.svg" alt="Curtir">
+                        <img class="favorite-icon" src="../img/favorite-white.svg" alt="Favoritar">
+                    </div>
+                </div>
+                <div id="bill-post" class="post-text">
+                    <p>Vocês são tudo pra mim S2.</p>
+                </div>
+            </article>
+        </div>
+        <!-- -------- fim do conteúdo principal -------- -->
+
+        <!-- -------- inicio da barra lateral direita -------- -->
+        <aside class="right-sidebar">
+            <div class="sidebar-people-you-may-know">
+                <h1>Pessoas que você talvez conheça</h1>
+                <div class="people-profile">
+                    <div class="profile-item">
+                        <img src="../img/joy.jpeg" alt="Foto de perfil da alegria">
+                        <span>alegriaaaa</span>
+                        <button class="follow-button">Adicionar</button>
+                    </div>
+                    <div class="profile-item">
+                        <img src="../img/sadnnes.jpeg" alt="Foto de perfil da tristeza">
+                        <span>tristeza_bad</span>
+                        <button class="follow-button">Adicionar</button>
+                    </div>
+                    <div class="profile-item">
+                        <img src="../img/anxiety.png" alt="Foto de perfil da ansiedade">
+                        <span>ansiedadeXX</span>
+                        <button class="follow-button">Adicionar</button>
+                    </div>
+                    <div class="profile-item">
+                        <img src="../img/anger.jpg" alt="Foto de perfil da raiva">
+                        <span>raiva</span>
+                        <button class="follow-button">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <!-- -------- fim da barra lateral direita -------- -->
+    </main>
+    <script src="../JavaScript/feed.js"></script>
+</body>
+</html>
